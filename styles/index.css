@@ -26,6 +26,7 @@ h1 {
         font-size: 2em;
         font-family: serif;
         text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .HowItWorks {
@@ -61,6 +62,7 @@ p {
   font-size: .75em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
+  text-align: unset;
 }
 
 .author1 {
@@ -68,7 +70,7 @@ p {
 }
 footer {
   background-color: #444;
-  color: #6c6c6c;
+  color: grey;
   font-size: .7em;
 }
 
@@ -121,5 +123,19 @@ footer p {
     right: 10%;
   }
 
-  
+  .authors h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .authors h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .9em;
+  }
+  .authors p {
+    font-size: .5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
 }
