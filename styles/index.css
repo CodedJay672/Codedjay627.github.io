@@ -65,6 +65,16 @@ p {
   text-align: unset;
 }
 
+.authors h1 {
+  font-size: .9em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.authors h4 {
+  font-size: .75em;
+}
+
 .author1 {
   margin-bottom: 20px;
 }
@@ -72,6 +82,7 @@ footer {
   background-color: #444;
   color: grey;
   font-size: .7em;
+  opacity: .7;
 }
 
 footer p {
@@ -126,13 +137,11 @@ footer p {
   .authors h1 {
     text-align: left;
     margin-bottom: 10px;
-    text-decoration: underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .authors h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: .9em;
   }
   .authors p {
     font-size: .5em;
