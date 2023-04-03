@@ -8,25 +8,118 @@ body {
   width: 100%;
   font-size: 16px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .intro {
-	background-color: #444;
-	color: #e3e3e3;
-	padding: 5px 10px;
-	height: 400px;
-	margin-bottom: 30px;
-	display: flex;
-	justify-content: space-between;
+        background-color: #444;
+        color: #e3e3e3;
+        height: 300px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
-.intro h1 {
-	font-size: 2em;
-	font-family: serif;
+h1 {
+        font-size: 2em;
+        font-family: serif;
+        text-align: center;
 }
 
-.intro p {
-	font-size: 1em;
-	font-color: inherit;
+.HowItWorks {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  line-height: 20px;
+  font-size: larger;
+  text-align: center;
+}
+
+.authors {
+  margin-bottom: 50px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.authors img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.authors p {
+  font-size: .75em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+.author1 {
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #444;
+  color: #6c6c6c;
+  font-size: .7em;
+}
+
+footer p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 601px) {
+  body {
+    background-color: #e3e3e3;
+    font-size: 28px;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    margin-bottom: 100px;
+    position: relative;
+    opacity: .7;
+  }
+
+  .intro .positioning {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 400px;
+  }
+  h1 {
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: smaller;
+    width: 100%;
+  }
+  .HowItWorks {
+    margin-bottom: 100px;
+    height: 400px;
+    position: relative;
+  }
+
+  .HowItWorks .desc-position {
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+
+  
 }
