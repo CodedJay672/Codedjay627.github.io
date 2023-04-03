@@ -1,6 +1,6 @@
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body {
   padding: 5px 10px;
 }
 
-header {
+.intro {
 	background-color: #444;
 	color: #e3e3e3;
 }
