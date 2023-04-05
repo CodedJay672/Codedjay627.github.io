@@ -12,14 +12,19 @@ body {
 }
 
 .intro {
-        background-color: #444;
-        color: #e3e3e3;
-        height: 300px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  background-image: url("../images/banner.jpg");
+  background-size: contain;
+  color: #e3e3e3;
+  height: 300px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1 {
+  display: none;
 }
 
 h1 {
@@ -29,22 +34,99 @@ h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+nav {
+  width: 60%;
+  position: absolute;
+  top: 4%;
+  right: 3%;
+}
+
+button {
+  width: 10%;
+  height: 7%;
+  background-image: url("../images/white-menu.png");
+  background-color: rgba(41, 41, 41, .5);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  top: 4%;
+  right: 3%;
+}
+
+nav ul{
+  border: 1px solid white;
+  border-radius: 5px;
+  display: none;
+}
+
+nav li {
+  list-style-type: none;
+  color: aliceblue;
+  background-color: antiquewhite;
+  border-bottom: 1px solid white;
+  opacity: .86;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
 .HowItWorks {
   display: flex;
-  height: 300px;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 50px;
   align-items: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, .9);
+  padding: 10px;
 }
 
-p {
+.HowItWorks div {
+  margin-bottom: 20px;
+}
+.HowItWorks div:last-child {
+  margin-bottom: 10px;
+}
+
+.HowItWorks h1 {
+  font-size: .79em;
+  color: antiquewhite;
+  margin-bottom: 20px;
+}
+
+.HowItWorks h2 {
+  font-size: 1.3em;
+  color: antiquewhite;
+}
+.desc-position p {
   line-height: 20px;
-  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .9em;
   text-align: center;
+  padding: 10px;
+  color: antiquewhite;
 }
 
+div.about-container {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.about-container h1 {
+  font-size: .79em;
+}
+
+.about-container p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .authors {
   margin-bottom: 50px;
   padding: 0 10px;
@@ -59,30 +141,64 @@ p {
 }
 
 .authors p {
-  font-size: .75em;
+  font-size: .8em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
   text-align: unset;
 }
 
 .authors h1 {
-  font-size: .9em;
+  font-size: .79em;
   text-align: left;
   margin-bottom: 10px;
 }
 
 .authors h4 {
-  font-size: .75em;
+  font-size: .8em;
 }
 
-.author1 {
+.author2, .author1 {
+  border-right: 6px solid black;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
+
+.about-container img {
+  float: left;
+  margin: 20px;
+}
+
+.about-container p {
+  text-align: unset;
+}
 footer {
-  background-color: #444;
-  color: grey;
-  font-size: .7em;
+  background-color: black;
   opacity: .7;
+  display: flex;
+  flex-direction: column;
+  color: #a2a2a2;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+footer h4 {
+  font-size: .75em;
+  margin-bottom: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  font-size: small;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer p {
@@ -91,11 +207,13 @@ footer p {
   text-align: center;
 }
 
+.copyright {
+  font-size: .5em;
+}
 @media only screen and (min-width: 601px) {
   body {
-    background-color: #e3e3e3;
     font-size: 28px;
-    width: 800px;
+    width: 850px;
     margin: 0 auto;
   }
 
@@ -103,37 +221,74 @@ footer p {
     margin-bottom: 100px;
     position: relative;
     opacity: .7;
+    background-size: cover;
   }
 
   .intro .positioning {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    bottom : 15%;
+    left: center;
     width: 400px;
   }
+
+  nav.nav-sections {
+    width: 70%;
+    position: absolute;
+    bottom: 2%;
+    left: center;
+  }
+
+  nav.nav-sections ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  .nav-sections li {
+    list-style-type: none;
+    padding: 0 20px;
+  }
+
+  .nav-sections li:nth-of-type(2) {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 0 60px;
+  }
+  .nav-sections a {
+    font-size: .5em;
+    text-decoration: none;
+    color: #e3e3e3;
+  }
+
+  .nav-sections a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
   h1 {
     font-size: 1.2em;
     text-align: center;
     width: 100%;
   }
 
-  p {
-    font-size: smaller;
-    width: 100%;
-  }
-  .HowItWorks {
-    margin-bottom: 100px;
-    height: 400px;
-    position: relative;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .HowItWorks .desc-position {
-    width: 400px;
-    position: absolute;
-    top: 20%;
-    right: 10%;
+  .feature1, .feature2, .feature3 {
+    width: 33.3%;
+    font-size: medium;
+  }
+  .HowItWorks h1 {
+    font-size: .95em;
   }
 
+  .HowItWorks h2 {
+    font-size: medium;
+
+  }
   .authors h1 {
     text-align: left;
     margin-bottom: 10px;
@@ -146,5 +301,15 @@ footer p {
   .authors p {
     font-size: .5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .about-container img{
+    float: left;
+    margin: 20px;
+  }
+
+  .about-container p {
+    font-size: .7em;
+    text-align: unset;
   }
 }

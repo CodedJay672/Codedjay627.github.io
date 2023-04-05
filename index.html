@@ -11,37 +11,92 @@
 <body>
   <!-- this the header section -->
   <header class="intro">
+    <button></button>
+    <nav class="nav-sections">
+      <ul>
+        <li><a href="#feature">FEATURES</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#authors">AUTHORS</a></li>
+      </ul>
+    </nav>
     <div class="positioning">
-          <h1>MusicMatch</h1>
-          <p>Listen to songs of your choosing...</p>
+      <h1>MusicMatch</h1>
+      <p class="tagline">Listen to songs of your choosing...</p>
     </div>
   </header>
-
-  <div class="HowItWorks">
-    <div class="desc-position">
-          <h1>How it works</h1>
-          <p>Listen to music of you choosing. MusicMatch allows you add songs
-          to your "Liked songs" list and get recommendations</p>
+<!-- Features markup -->
+  <a id="feature">
+    <div class="HowItWorks desc-position">
+        <h1>Features</h1>
+        <div class="container">
+          <div class="feature1">
+            <h2>Personalised playlist</h2>
+            <p>Listen to music of your choosing. MusicMatch allows you add songs
+            to your "Liked songs" list and get recommendations</p>
+          </div>
+          <div class="feature2">
+            <h2>Upload songs</h2>
+            <p>MusicMatch allows you to upload your own songs. There are no limits to the number of songs you can upload. This feature allows users to fine tune what they listen to; whether gospel, rock, blues, reggae, or classical music, MusicMach is the app for you.</p>
+          </div>
+          <div class="feature3">
+            <h2>Get Recommendation</h2>
+            <p>MusicMatch also allows users to get song recommendation based on certain requirements they provide. Details like Genre, Artist, and Title can be used to get song recommendation from MusicMatch.</p>
+            <img src="images/app_nav.jpg" alt="app_screenshot" width="70%"/>
+          </div>
+        </div>
     </div>
-  </div>
+  </a>
 
-  <div class="authors">
-    <h1>Authors</h1>
-    <div class="author1">
-      <img src="images/profile.jpg" alt="github.com/codedjay672" />
-      <h4>Emmanuel Ebuka Ugoh</h4>
-      <p>Graduate of ALX Software Engineering Internship program (cohort 8). Contact me on email here <a href="mailto:emmajoel6456@gmail.com">Email</a> </p>
+  <!-- About page -->
+  <a id="about">
+    <div class="about-container">
+      <img src="images/footer.jpg" width="30%" alt="app_image" />
+      <h1>About</h1>
+      <p>This project was inspired by the curiosity to put to test the knowledge gathered during the 12 months software engineering program at ALX. The team wanted to create a simple but useful application which will be useful for music lovers around the world. This project is a portfolio project for Holberton School <img src="images/hbtn.jpeg" alt="holberton_school" width="30%" /></p>
     </div>
+  </a>
 
-    <div class="author2">
-      <img src="images/partner.jpeg" alt="github.com/tii04" />
-      <h4>Tilsetso Sebata</h4>
-      <p>Graduate of ALX Software Engineering Internship program (cohort 8). Contact on email Here <a href="malto:tilsetso@gmail.com">Email</a></p>
+  <!-- Meet the authors -->
+  <a id="authors">
+    <div class="authors">
+      <h1>Authors</h1>
+        <div class="author1">
+          <img src="images/profile.jpg" alt="github.com/codedjay672" />
+          <h4>Emmanuel Ebuka Ugoh</h4>
+          <p>Graduate of ALX Software Engineering Internship program (cohort 8). Contact me on email here <a href="mailto:emmajoel6456@gmail.com">Email</a> </p>
+        </div>
+
+        <div class="author2">
+          <img src="images/partner.jpeg" alt="github.com/tii04" />
+          <h4>Tilsetso Sebata</h4>
+          <p>Graduate of ALX Software Engineering Internship program (cohort 8). Contact on email Here <a href="malto:tilsetso@gmail.com">Email</a></p>
+        </div>
     </div>
-  </div>
+  </a>
 
+  <!--Footer markup -->
   <footer>
-    <p>copyright &copy; since 2023</p>
+    <div class="links">
+      <div class="author1">
+        <h4>Emmanuel Ugoh</h4>
+        <a href="https://www.github.com/codedjay672">Github</a>
+        <a href="https://www.linkedin.com/in/emmanuel-joel-ln672">LinkedIn</a>
+        <a href="https://www.twitter.com/_iammanny_">Twitter</a>
+      </div>
+      <div class="author2">
+        <h4>Tilsetso Sebata</h4>
+        <a href="https://www.github.com/tii04">Github</a>
+        <a href="https://www.linkedin.com/Tiisetso_Sebata">LinkedIn</a>
+        <a href="https://www.twitter.com/tiixseba">Twitter</a>
+      </div>
+      <div class="portfolio-links">
+        <h4>Visit Project Repository</h4>
+        <a href="#">Portfolio Project</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright &copy; since 2023</p>
+    </div>
   </footer>
 </body>
 </html>
