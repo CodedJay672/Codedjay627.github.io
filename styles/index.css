@@ -13,15 +13,17 @@ body {
 
 .intro {
   background-image: url("../images/banner.jpg");
-  background-size: contain;
+  background-size: 100%;
   color: #e3e3e3;
   height: 300px;
+  padding-bottom: 10%;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
+
 
 .intro h1 {
   display: none;
@@ -42,21 +44,19 @@ nav {
 }
 
 button {
-  width: 10%;
-  height: 7%;
+  width: 7%;
   background-image: url("../images/white-menu.png");
-  background-color: rgba(41, 41, 41, .5);
-  background-size: 100%;
+  background-color: rgba(46, 41, 41, 0.5);
+  background-size: 80%;
   background-repeat: no-repeat;
+  padding: 3% 0;
   border: none;
   position: absolute;
   top: 4%;
   right: 3%;
 }
 
-nav ul{
-  border: 1px solid white;
-  border-radius: 5px;
+.tog-disp {
   display: none;
 }
 
@@ -74,6 +74,7 @@ nav li {
 nav li:last-child {
   border-bottom: none;
 }
+
 nav a {
   text-decoration: none;
   color: black;
@@ -89,6 +90,9 @@ nav a {
   padding: 10px;
 }
 
+.positioning {
+  position: abdp
+}
 .HowItWorks div {
   margin-bottom: 20px;
 }
@@ -224,6 +228,10 @@ footer p {
     background-size: cover;
   }
 
+  .intro button {
+    display: none;
+  }
+
   .intro .positioning {
     position: absolute;
     bottom : 15%;
@@ -232,21 +240,24 @@ footer p {
   }
 
   nav.nav-sections {
-    width: 70%;
-    position: absolute;
-    bottom: 2%;
-    left: center;
+    position: unset;
   }
 
   nav.nav-sections ul {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    position: absolute;
+    bottom: 2%;
+    left: 15%;
   }
   
   .nav-sections li {
     list-style-type: none;
     padding: 0 20px;
+    border-bottom: none;
+    background-color: unset;
   }
 
   .nav-sections li:nth-of-type(2) {
