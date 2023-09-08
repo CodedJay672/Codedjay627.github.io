@@ -1,120 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MusicMatch</title>
-  <meta charset="UTF-8" />
-  <link href="styles/index.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- this the header section -->
-  <header class="intro">
-    <button></button>
-    <nav class="nav-sections">
-      <ul class="tog-disp">
-        <li><a href="#feature">FEATURES</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#authors">AUTHORS</a></li>
-      </ul>
-    </nav>
-    <div class="positioning">
-      <h1>MusicMatch</h1>
-      <p class="tagline">Listen to songs of your choosing...</p>
-    </div>
-  </header>
-
-
-<!-- Features markup -->
-  <a id="feature">
-    <div class="HowItWorks desc-position">
-        <h1>Features</h1>
-        <div class="container">
-          <div class="feature1">
-            <h2>Personalised playlist</h2>
-            <p>Listen to music of your choosing. MusicMatch allows you add songs
-            to your "Liked songs" list and get recommendations</p>
-          </div>
-          <div class="feature2">
-            <h2>Upload songs</h2>
-            <p>MusicMatch allows you to upload your own songs. There are no limits to the number 
-	    of songs you can upload. This feature allows users to fine tune what they listen to; 
-	    whether gospel, rock, blues, reggae, or classical music, MusicMach is the app for you.</p>
-          </div>
-          <div class="feature3">
-            <h2>Get Recommendation</h2>
-            <p>MusicMatch also allows users to get song recommendation based on 
-	    certain requirements they provide. Details like Genre, Artist, and Title 
-	    can be used to get song recommendation from MusicMatch.</p>
-            <img src="images/app_nav.jpg" alt="app_screenshot" width="70%" />
-          </div>
-        </div>
-    </div>
-  </a>
-
-  <!-- About page -->
-  <a id="about">
-    <div class="about-container">
-      <img src="images/footer.jpg" width="30%" alt="app_image" />
-      <h1>About</h1>
-      <p>This project was inspired by the curiosity to put to test the 
-      knowledge gathered during the 12 months software engineering program at ALX. 
-      The team wanted to create a simple but useful application which will be useful 
-      for music lovers around the world.</p>
-      <p>This project is a portfolio project for Holberton School.
-      <img src="images/hbtn.jpeg" alt="holberton_school" width="30%" class="right" />
-      Holberton school, is vey committed to lifting youths in Africa and around 
-      the world out of poverty into the world of Tech. Africa is the next Tech 
-      giant and Holberton School is working really hard to make this happen. 
-      You can visit their official page at 
-      <a href="https://www.holbertonschool.com" class="hbtn-link">holberton school</a></p>
-    </div>
-  </a>
-
-  <!-- Meet the authors -->
-  <a id="authors">
-    <div class="authors">
-      <h1>Authors</h1>
-        <div class="author1">
-          <img src="images/profile.jpg" alt="github.com/codedjay672" />
-          <h4>Emmanuel Ebuka Ugoh</h4>
-          <p>Graduate of ALX Software Engineering Internship program (cohort 8). 
-	  Contact me on email here <a href="mailto:emmajoel6456@gmail.com">Email</a> </p>
-        </div>
-
-        <div class="author2">
-          <img src="images/partner.jpeg" alt="github.com/tii04" />
-          <h4>Tiisetso Sebata</h4>
-          <p>Graduate of ALX Software Engineering Internship program (cohort 8). 
-	  Contact on email Here <a href="mailto:tiisetso.qsebata@gmail.com">Email</a></p>
-        </div>
-    </div>
-  </a>
-
-  <!--Footer markup -->
-  <footer>
-    <div class="links">
-      <div class="author1">
-        <h4>Emmanuel Ugoh</h4>
-        <a href="https://www.github.com/codedjay672">Github</a>
-        <a href="https://www.linkedin.com/in/emmanuel-joel-ln672">LinkedIn</a>
-        <a href="https://www.twitter.com/_iammanny_">Twitter</a>
-      </div>
-      <div class="author2">
-        <h4>Tiisetso Sebata</h4>
-        <a href="https://www.github.com/tii04">Github</a>
-        <a href="https://www.linkedin.com/in/tiisetso-sebata-91a36a227">LinkedIn</a>
-        <a href="https://www.twitter.com/tiixseba">Twitter</a>
-      </div>
-      <div class="portfolio-links">
-        <h4>Visit Project Repository</h4>
-        <a href="https://www.github.com/Tii04/MusicMatch">Portfolio Project</a>
+<!Doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is a simple web card" />
+    <link rel="stylesheet" href="./stageOne.css" />
+    <title>HNG | Stage One</title>
+  </head>
+  <body>
+    <div class="faceCard">
+      <img src="./myImg.jpg" alt="emmanuel joel" data-testid="slackDisplayImage" width="200" />
+      <h1 data-testid="slackUserName">Emmanuel Joel</h1>
+      <div class="details">
+        <p data-testid="currentDayOfTheWeek" class="weekDay"></p>
+        <p data-testid="currentUTCTime" class="utcTime"></p>
+        <p data-testid="myTrack"><ion-icon name="file-tray-stacked-outline"></ion-icon> Frontend</p>
+        <p data-testid=“githubURL”><ion-icon name="globe-outline"></ion-icon>
+          <a href="https://github.com/CodedJay672/hngInternship" target="_blank">Github</a>
+        </p>
       </div>
     </div>
-    <div class="copyright">
-      <p>copyright &copy; since 2023</p>
-    </div>
-  </footer>
-</body>
+    <script type="text/javascript">
+      const now = new Date();
+      const time = now.getUTCHours() + ":" + now.getUTCMinutes() + ":" + now.getUTCSeconds();
+      const weekDay = document.querySelector('.weekDay');
+      const utcTime = document.querySelector('.utcTime');
+
+      switch(now.getDay()) {
+        case 0:
+          var day = 'Sunday';
+          break;
+        case 1:
+          var day = 'Monday';
+          break;
+        case 2:
+          var day = 'Tuesday';
+          break;
+        case 3:
+          var day = 'Wednesday';
+          break;
+        case 4:
+          var day = 'Thursday';
+          break;
+        case 5:
+          var day = 'Friday';
+          break;
+        default:
+          var day = 'Saturday';
+      }
+
+      weekDay.innerHTML = day;
+      utcTime.innerHTML = time + " (UTC)";
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
