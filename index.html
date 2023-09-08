@@ -22,7 +22,10 @@
     </div>
     <script type="text/javascript">
       const now = new Date();
-      const time = now.getUTCHours() + ":" + now.getUTCMinutes() + ":" + now.getUTCSeconds();
+      const hour = String(now.getUTCHours());
+      const minute = String(now.getUTCMinutes());
+      const seconds = String(now.getUTCSeconds());
+      const time = hour.padStart(2,"0") + ":" + minute.padStart(2, "0") + ":" + seconds.padStart(2, "0");
       const weekDay = document.querySelector('.weekDay');
       const utcTime = document.querySelector('.utcTime');
 
